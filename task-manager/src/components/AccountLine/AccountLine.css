@@ -1,0 +1,11 @@
+.account-line{
+    display: flex;
+    align-items: center;
+}
+
+.account-line img{
+    max-width: 30px;
+    border-radius: 50%;
+    border: 3px #fff solid;
+    margin-right: 5px;
+}
