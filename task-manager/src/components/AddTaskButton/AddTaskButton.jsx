@@ -1,9 +1,9 @@
 import './AddTaskButton.css'
 
-function AddTaskButton(){
+function AddTaskButton({onclick}){
 
     return(
-        <button className="add-task-button">New task</button>
+        <button className="add-task-button" onClick={onclick}>New task</button>
     )
 }
 
