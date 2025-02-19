@@ -1,13 +1,13 @@
 import TaskItem from "../TasksItem/TaskItem"
 
-function TasksList(){
+function TasksList({tasksListData}){
     
     return(
         <div className='task-list'>
             <div className="container">
-               <TaskItem /> 
-               <TaskItem /> 
-               <TaskItem /> 
+                {
+                    tasksListData.map((task) => <TaskItem key={task.id} taskData={task} />)
+                }
             </div>
         </div>
     )
